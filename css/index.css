@@ -1,0 +1,304 @@
+/* Reset CSS / Normalizar CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark {
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+}
+
+picture , img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+:root{
+    
+    --font-16: 16px;
+    --font-20: 20px;
+    
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    --color-basic-black: black;
+    --color-basic-white:white;
+    --color-line-footer: gainsboro;
+    
+}
+
+
+
+.Header{
+    width: 100%;
+    min-height: 150px;
+
+    max-width: 2000px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.Header-logo{
+    padding: 0 0 0 80px;
+}
+.Header-logo--light{
+    padding: 0 0 0 80px;
+    display: none;
+}
+
+.Header-menu{
+    font-family: "Raleway", serif;
+    font-size:var(--font-16);
+    font-weight: var(--font-weight-700);
+    
+}
+
+.Header-hamburguesa{
+    display:none;
+}
+    
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    gap:20px;
+    padding: 0 80px 0 0;
+}
+
+.Header-li--subrayado{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+.body{
+    font-family: "Raleway", serif;
+    font-style: normal;
+}
+
+.Prints{
+    max-width: 2000px;
+    margin: auto;
+}
+
+.Prints-text{
+    width: 45%;
+
+    font-family: "Raleway", serif;
+    font-size: var(--font-20);
+    font-weight: var(--font-weight-600);
+
+    padding: 40px 0 60px 80px ;
+}
+
+.Prints-container{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap:30px;
+    padding: 80px; 
+
+}
+
+.Prints-picture{
+    width: calc( 100% / 4 - 30px);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Prints-imag{
+    width:100%;
+    object-fit: cover;
+ 
+
+}
+
+.Prints-h2{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap:5px;
+
+    font-family: "Raleway", serif;
+    font-size: var( --font-16);
+    font-weight: var(--font-weight-600);
+
+    padding: 0 0 80px 0;
+
+}
+
+.Footer{
+    width: 100%;
+    min-height: 80px;
+
+    max-width: 2000px;
+    margin: auto;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+
+    padding: 0 80px 40px 80px;
+
+    font-family: "Raleway", serif;
+    font-size:var(--font-16);
+    font-weight: var(--font-weight-500);
+
+    border-top: 1px solid var(--color-line-footer);
+}
+
+
+.Redes{
+    display: flex;
+    flex-flow: row nowrap;
+    gap:20px;
+
+}
+
+@media (prefers-color-scheme:dark){
+    :root{
+        --color-basic-black: white;
+        --color-basic-white:black;
+    }
+    .Header-logo{
+        padding: 0 0 0 80px;
+        display:none
+    }
+    .Header-logo--light{
+        padding: 0 0 0 80px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .Prints-text{
+        width: 60%;
+        padding: 30px 0 50px 70px ;
+    }
+
+    .Prints-picture{
+    width: calc( 100% / 3 - 30px);
+    }
+}
+
+@media screen and (max-width:960px) {
+    .Prints-text{
+        width: 70%;
+        padding: 20px 0 40px 60px ;
+    }
+
+    .Prints-picture{
+    width: calc( 100% / 2 - 30px);
+    }
+
+    .Footer{
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        padding: 50px 0 50px 0;
+    }
+
+
+}
+
+
+@media screen and (max-width:700px) {
+    .Header-hamburguesa {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        margin: 0 60px 0 0;
+    }
+
+    .Header-menu{
+    display:none;
+    }
+
+    .Prints-text{
+        width: 80%;
+        padding: 0 60px 0 60px;
+        font-size: var(--font-16);
+    }
+
+
+
+}
+
+@media screen and (max-width:620px) {
+    .Prints-text{
+        width: 90%;
+        padding: 0 20px 0 60px;
+        font-size: var(--font-16);
+        
+    }
+
+    .Prints-picture{
+    width: calc( 100%  - 30px);
+    }
+
+    .Prints-container{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+}
