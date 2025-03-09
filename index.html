@@ -13,10 +13,9 @@
     <header class="Header">
         <h1 class="Header-h1">
             <picture>
-                <source srcset="assets/logo.png" type="image/png">
-                <img class="Header-logo" src="assets/logo.png" alt="logo" >
-                <source srcset="assets/logo-light.png" type="image/png">
-                <img class="Header-logo Header-logo--light" src="assets/logo-light.png" alt="logo" fetchpriority="high" >
+                <source srcset="assets/logo-light.png" media="(prefers-color-scheme: dark)" type="image/png">
+                <source srcset="assets/logo.png" media="(prefers-color-scheme: light)" type="image/png">
+                <img class="Header-logo" src="assets/logo.png" alt="logo" fetchpriority="high">
             </picture>
         </h1>
 
@@ -37,7 +36,7 @@
     </header>
 
     <main class="Main">
-        <section class="Prints">
+        <div class="Prints">
             <p class="Prints-text"> Check out some of the stuff we have worked on with and work spanning across several
                     different mediums including digital prints, company branding & more
             </p>
@@ -97,8 +96,8 @@
                 <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                 </svg>
                 <a href="https://demo.qodeinteractive.com/stockholm14/" title="Show more">Show more</a>
-            <div>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer class="Footer">
