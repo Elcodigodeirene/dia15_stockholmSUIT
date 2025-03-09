@@ -160,6 +160,7 @@ svg{
 .Prints-imag{
     width:100%;
     object-fit: cover;
+    aspect-ratio: auto;
  
 
 }
@@ -285,7 +286,7 @@ svg{
     .Prints-text{
         width: 90%;
         padding: 0 20px 0 60px;
-        font-size: var(--font-16);
+        
         
     }
 
